@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+:root{
+	---very-dark-grayish-blue: hsl(217, 19%, 35%);
+	---desaturated-dark-blue: hsl(214, 17%, 51%);
+	---grayish-blue: hsl(212, 23%, 69%);
+	---light-grayish-blue: hsl(210, 46%, 95%);
+}
+*{
+	margin: 0 0;
+	padding: 0 0;
+	font-family: 'Manrope', sans-serif;
+	font-size: 13px;
+}
+body{
+	background-color: var(---light-grayish-blue);
+}
+body main {
+	padding: 60px 20px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+body main .card{
+	width: 330px;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+body main .card .image-wrapper{
+	margin: 0 0;
+	padding: 0 0;
+}
+body main .card .image-wrapper img{
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+body main .card .text-wrapper{
+	padding: 30px 20px;
+	display: flex;
+	flex-flow: column;
+	gap: 15px;
+}
+body main .card .text-wrapper h1{
+	font-size: 18px;
+	font-weight: 700;
+}
+body main .card .text-wrapper p{
+	color: var(---grayish-blue);
+}
+body main .card .container {
+	width: 100%;
+	padding: 0px 20px 20px 20px;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+body main .card .container img {
+	border-radius: 50%;
+	height: 40px;
+}
+
+body main .card .container .profile-inf {
+	width: 50%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+
+body main .card .container .profile-inf h1 {
+	font-weight: 700;
+}
+body main .card .container .profile-inf p {
+	color: var(---grayish-blue);
+}
+
+body main .card .container button {
+	border-radius: 50%;
+	height: 40px;
+	width: auto;
+	padding: 0;
+	border: none;
+	background-color: var(---light-grayish-blue);
+	z-index: 10;
+}
+body main .card .container button img {
+	height: 50%;
+	width: auto;
+}
+
+#pop{
+	background-color: var(---desaturated-dark-blue);
+	position: absolute;
+	width: 330px;
+	border-radius: 0 0 10px 10px;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	gap: 10px;
+	
+}
+#pop .text-wrapper{
+	text-transform: uppercase;
+	color: var(---grayish-blue);
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+#pop .media-block {
+	width: 30%;
+	height: auto;
+	display: flex;
+	flex-flow: row;
+	gap: 10px;
+}
+#pop .media-block img{
+	width: 30%;
+	height: auto;
+}
+footer{
+  display: none;
+}
+@media screen and (min-width: 800px) {
+	*{
+		font-size: 18px;
+	}
+	body{
+		text-align: center;
+	}
+	body main {
+		padding: 60px 20px 20px 20px;
+		text-align: left;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+
+	body main .card .container img {
+		border-radius: 50%;
+		height: 40px;
+	}
+
+	#pop{
+		width: 240px;
+		height: 60px;
+		border-radius: 10px;
+	}
+	#pop .media-block a {
+		width: 100%;
+		height: 100%;
+	}
+	#pop .media-block a img{
+		width: 100%;
+		height: auto;
+	}
+	.bubble {
+  position: relative;
+  width: 100px;
+  text-align: center;
+  right: 150px;
+  top: 460px;
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid var(---desaturated-dark-blue);
+  border-right: 12px solid transparent;
+  border-top: 12px solid var(---desaturated-dark-blue);
+  border-bottom: 20px solid transparent;
+  left: 100px;
+  bottom: -24px;
+}
+	footer{
+      color: black;
+      display: unset;
+  }
+  footer a:link {
+      color: red;
+  }
+  footer a:visited {
+      color: green;
+  }
+  footer a:hover {
+      color: hotpink;
+  }
+  footer a:active {
+      color: blue;
+  }
+}
+@media screen and (min-width: 1200px){
+	@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+body{
+	text-align: center;
+}
+body main {
+	justify-content: center;
+	text-align: left;
+}
+body main .card{
+	width: 800px;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+}
+body main .card .box {
+	width: auto;
+	padding: 30px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+body main .card .image-wrapper{
+	margin: 0 0;
+	padding: 0 0;
+	height: 100%;
+}
+body main .card .image-wrapper img{
+	height: 100%;
+	margin: 0 0;
+	padding: 0 0;
+	border-radius: 10px 0 0 10px;
+}
+body main .card .text-wrapper{
+	padding: 0px 0px;
+	display: flex;
+	flex-flow: column;
+	gap: 20px;
+}
+body main .card .text-wrapper h1{
+	font-size: 24px;
+	font-weight: 700;
+}
+body main .card .text-wrapper p{
+	font-size: 16px;
+	color: var(---grayish-blue);
+}
+body main .card .container {
+	width: 100%;
+	height: auto;
+	padding: 0px 0px 0px 0px;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0px;
+}
+
+body main .card .container .profile-inf {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+}
+
+body main .card .container .profile-inf h1 {
+	font-weight: 700;
+}
+body main .card .container .profile-inf p {
+	color: var(---grayish-blue);
+}
+
+body main .card .container button {
+	border-radius: 50%;
+	height: 40px;
+	width: auto;
+	padding: 0;
+	border: none;
+	background-color: var(---light-grayish-blue);
+	z-index: 10;
+}
+body main .card .container button img {
+	height: 50%;
+	width: auto;
+}
+
+#pop{
+	width: 200px;
+	padding: 10px;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	gap: 10px;
+	text-align: center;
+	
+}
+#pop .text-wrapper{
+	text-transform: uppercase;
+	color: var(---grayish-blue);
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+#pop .media-block {
+	width: 80px;
+	height: auto;
+	display: flex;
+	flex-flow: row;
+	gap: 10px;
+}
+#pop .media-block img{
+	width: 30%;
+	height: auto;
+}
+
+.bubble {
+  position: relative;
+  width: 100px;
+  text-align: center;
+  right: 13%;
+  top: 26%;
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid var(---desaturated-dark-blue);
+  border-right: 12px solid transparent;
+  border-top: 12px solid var(---desaturated-dark-blue);
+  border-bottom: 20px solid transparent;
+  left: 100px;
+  bottom: -24px;
+}
+}
